@@ -18,8 +18,6 @@ $headers = [
 curl_setopt($request, CURLOPT_HTTPHEADER, $headers);
 // Execute
 $response = curl_exec($request);
-// Will dump a beauty json <3
-$fr=json_decode($response, true);
 
 curl_close($request);
 print_r($response);
